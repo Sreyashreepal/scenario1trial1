@@ -31,10 +31,12 @@ jobs:
       
     - name: Build with Maven
       run: mvn -B package --file pom.xml
-
-    
+      
+    - name: Show all the directories
+      run:  ls -a
+        
+  
     - name: Show all the directories
       run:  |
-        ls -a
         cd target
         ls -a
