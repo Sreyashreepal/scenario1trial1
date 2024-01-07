@@ -40,3 +40,9 @@ jobs:
       run:  |
         cd target
         ls -a
+        
+    - name: Upload artifact for deployment job
+      uses: actions/upload-artifact@v3
+      with:
+        name: java-app
+        path: '${{ github.workspace }}/target/*.war'
