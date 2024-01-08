@@ -42,7 +42,7 @@ jobs:
       run:  ls -a
         
   
-    - name: Show all the directories
+    - name: Show all the content inside target file
       run:  |
         cd target
         ls -a
